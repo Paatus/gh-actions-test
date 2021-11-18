@@ -11,9 +11,8 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - name: 'Bumpty'
-        run: yarn
-        run: yarn update ramda
+      - run: yarn
+      - run: yarn update ramda
       - name: 'Commit'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
